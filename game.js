@@ -1,7 +1,25 @@
 'use strict';
 
-function game(userInput) {
-    
+// const rawInput = prompt("Rock, Paper, or Scissors?");
+
+// function convertInput(rawInput) {
+//     if (rawInput === "rock") {
+//         userInput = 1;
+//     }
+
+//     if (rawInput === 'paper' {
+//         userInput === 2;
+//     }
+//     if (rawInput === 'scissors') {
+
+//     }
+// }
+
+
+
+function game() {
+  let userInput = parseInt(prompt('1 for Rock, 2 for paper, 3 for scissors?'));
+  
   const randomNo = Math.floor(Math.random() * 3) + 1;
   console.log(randomNo, userInput);
   if (userInput === 1) {
@@ -47,16 +65,10 @@ function game(userInput) {
   else {
     return 'Yoda is not a valid hand sign in this game'; 
   }  
-
+console.log(userInput);
 }
 
-
-console.log(game(1));
-console.log(game(2));
-console.log(game(3));
-console.log(game(10));
-
-
+console.log(game());
 
 // rock = 1
 
