@@ -8,8 +8,12 @@ function whoAmI (name, age) {
 whoAmI('Chris', 29);
 
 function yearOfBirth(age) {
+  if ( age < 0) {
+    throw new Error('can\'t be negative!');
+  }
+
   let yob = 2018 - age;
   console.log(yob);
 }
 
-yearOfBirth(29);
+yearOfBirth(-29);
